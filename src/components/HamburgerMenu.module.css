@@ -1,0 +1,18 @@
+.burger{
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .burger{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        
+    }
+}

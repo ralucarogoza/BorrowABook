@@ -1,0 +1,113 @@
+.card{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.554);
+    color:black;
+    height: 100%; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: "center";
+    justify-content: "center";
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+    width: auto;
+}
+.card.dark{
+    background-color: rgb(111, 109, 109);
+    color: white;
+}
+
+.card.light{
+    background-color: rgba(255, 255, 255, 0.855);
+    border: 1px solid #ddd;
+    color: black;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: "center";
+  }
+
+
+.image img {
+    padding: 20px 10px 20px 10px;
+    max-width: 100%;
+    height: auto;
+    
+
+}
+  
+.data {
+    padding: 0px 10px 10px 10px;
+    border: 10px;
+    display: block;
+    
+
+}
+.data p {
+    font-size: 0.8em; 
+    font-family: "Merriweather", "Georgia", serif;
+    
+  }
+
+.data p:nth-child(1) {
+    font-size: 1em; 
+    overflow-wrap: break-word;
+
+}
+
+.gridcontainer{
+    display: grid;
+    gap: 40px; 
+    padding: 0px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+}
+
+.title{
+    margin: 0;
+    padding: 10px;
+    font-size: 50px;
+    color:rgb(204, 167, 130);
+
+}
+
+.back{
+    background-color: rgb(248, 221, 156);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.back.dark{
+    background-color: var(--primary-color-dark); 
+    color: white;
+}
+
+
+.forbtn{
+    text-align: right;
+}
+.btn{
+    width: 5%;
+    background-color: rgba(197, 158, 84, 0.872);
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-auto-rows: 1fr; 
+
+    }
+
+    .card {
+        height: 100%; 
+    }
+}
+

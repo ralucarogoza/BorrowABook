@@ -1,0 +1,65 @@
+.card{
+    background-color: rgba(255, 255, 255, 0.855);
+    width: 100%em;
+    height: 100%em; /* pt a avea aceeasi inaltime toate cards*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 20px;
+    align-items: "center";
+    justify-content: "center";
+    margin: auto;
+    padding: 50px;
+    overflow: hidden;
+    color:black;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: "center";
+  }
+
+
+.image img {
+    padding: 0px 0px 20px 10px;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    
+
+}
+  
+.data {
+    padding: 0px 10px 10px 10px;
+    border: 10px;
+    display: block;
+    
+
+}
+.data p {
+    font-size: 0.8em; 
+    font-family: "Merriweather", "Georgia", serif;
+  }
+
+.data p:nth-child(1) {
+    font-size: 1.5em; 
+  }
+
+h1{
+    margin: 0;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
